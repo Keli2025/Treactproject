@@ -1,0 +1,102 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  *{
+    Font-family: "Roboto", sans-serif;
+  }
+
+
+    element.style {
+      --vertical-scrollbar-width: 15px;
+      --horizontal-scrollbar-height: 0px;
+    }
+cr-icon-button {
+    --cr-icon-button-fill-color: #white var(--pdf-toolbar-text-color);
+    --cr-icon-button--focus-outline-color:
+      #gray var(--viewer-icon-focus-outline-color);
+      margin: 0px;
+  }
+
+    #zoom-controls {
+      align-items: center;
+      display: flex;
+      padding: 0px 4px;
+    }
+    
+    #center, #end, #menuButton, :host([loading_}) cr-progress {
+    opacity: 1;
+    visibility: visible;
+    }
+
+    #toolbar {
+      align-items: center;
+      background-color: black var(--viewer-pdf-toolbar--background-color);
+      color: rgb(255, 255, 255);
+      display: flex;
+      height: var(--viewer-pdf-toolbar-height);
+      padding: 0px 16px;
+    }
+    
+    viewer-toolbar {
+      --active-button-bg: rgba(255, 255, 255, 0.24);
+      z-index: 1;
+    }
+
+    viewer-pdf-sidenav, viewer-toolbar {
+      --pdf-toolbar-text-color: rgb(241, 241, 241);
+    }
+    :host {
+      --viewer-pdf-toolbar-height: 56px;
+      position: relative;
+    }
+
+    style attribute {
+      --vertical-scrollbar-width: 15px;
+      --horizontal-scrollbar-height: 15px;
+    }
+
+    :host {
+      --viewer-pdf-sidenav-width: 300px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      --viewer-scrollbar-width: 15px;
+      --horizontal-scrollbar-width: 0px;
+    }
+    :host {
+      --cr-icon-button-icon-start-offset: 0;
+      --cr-icon-button-icon-size: 20px;
+      --cr-icon-button-size: 32px;
+      --cr-icon-button-height: var(--cr-icon-button-size);
+      --cr-icon-button-transition: 150ms ease-in-out;
+      --cr-icon-button-width: var(--cr-icon-button-size);
+    }
+
+     
+  body {
+            height: 100%;
+        }
+
+    body {
+       width: 100%;
+    }
+    
+      html {
+  --iron-icon-height: 20px;
+    --iron-icon-width: 20px;
+    --viewer-border-color: rgb(94, 94, 94);
+    --viewer-icon-focus-outline-color: var(--google-grey-500);
+    --viewer-icon-ink-background-color: rgb(143, 143, 143);
+    --viewer-icon-ink-fill-color: rgb(199, 199, 199);
+    --viewer-icon-ink-selected-fill-color: rgb(168, 199, 250);
+    --viewer-icon-ink-selected-background-color: rgba(76, 141, 246, 0.32);
+    --viewer-pdf-toolbar-background-color: rgb(60, 60, 60);
+    --viewer-side-background-color: rgb(40, 41, 42);
+    --viewer-text-input-selection-color: rgba(255, 255, 255, 0.3);
+      }
+
+    cr-icon-button {
+      --cr-icon-button-fill-color: var(--pdf-toolbar-text-color);
+      --cr-icon-button--focus-outline-color:
+      gray var(--viewer-icon-focus-outline-color);
+      margin: 0px;
+    }

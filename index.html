@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="focus-outline-visible">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" crossorigin=""anonymous"></script>
+     <style>
+    </style>
+    <cr-iconset size="20" name="pdf-ink"></cr-iconset>
+    <cr-iconset name="cr20" size="20"></cr-iconset>
+    <cr-iconset name="cr" size="24"></cr-iconset>
+    <title>Treact</title>
+</head>
+<body>
+    <pdf-viewer id="viewer" class="pdf-viewer">
+        <div class="pdf-viewer">
+            <div class="pdf-viewer__header">
+                <h1 class="pdf-viewer__title">Treact</h1>
+            </div>
+            <div class="pdf-viewer__content">
+                <p>Welcome to the Treact PDF Viewer!</p>
+                <p>This viewer allows you to view PDF documents directly in your browser.</p>
+            </div>
+        </div>
+</body>
+#shadow-root (open)
+<!---->
+<!--_html_template_start_-->
+<div id="toolbar">
+<div id="start">
+    <cr-icon-button id="sidenavToggle" iron-icon="pdf:Menu" title="Menu" aria-label="Menu" aria-expanded="true" role="button" tabindex="0" aria-disabled="false"></cr-icon-button>
+aria-label="Menu" aria-expanded="true" role="button" tabindex="0" aria-disabled="false"></cr-icon-button>
+<span id="title">
+    <!--?<lit12124016811-->
+    "TReact"
+    </span>
+</div>
+<div id="center">
+    <viewer-page-selector style="--page-length-digits: 2;"></viewer-page-selector>
+    <span class="vertival-separator"></span>
+    #shadow-root (open)
+    <!----->
+    <!--_html_template_start_-->
+    <div id="content">
+        <input part="input" type="text" id="pageSelector" class="page-selector" aria-label="page number">
+        <span id="divider">/</span> 
+        <span id="pagelength">
+            <!--?lit$212401681$-->
+            "19"
+        </span>
+    </div>
+    <!--_html_template_end_-->
+    </viewer-page-selector>
+    <span class="vertical-separator"></span>
+    <span id="zoom-controls"></span>
+<span class="vertical-separator"></span>
+<cr-icon-button id="fit" title="Fit to page" aria-label="Fit to page" iron-icon="pdf:fit-to-height" role="button" tabindex="0" aria-disabled="false">
+    #shadow-root (open)
+    </cr-icon-button>
+<cr-icon-button id="rotate" iron-icon="pdf:rotate-left" suppress-rtl-flip aria-label="Rotate counterclockwise" title="Rotate counterclockwise" role="button"
+ tabindex="0" aria-disabled="false">
+    #shadow-root (open)
+    <!---->
+    <div id="icon">
+        <div id="maskedImage"></div>
+    <cr-icon> 
+        </div>
+       </cr-icon-button>
+
