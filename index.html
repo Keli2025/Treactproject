@@ -1,71 +1,284 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en" class="focus-outline-visible">
+<html dir="ltr" lang="en" class>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" crossorigin=""anonymous"></script>
-     <style>
-    </style>
-    <cr-iconset size="20" name="pdf-ink"></cr-iconset>
-    <cr-iconset name="cr20" size="20"></cr-iconset>
-    <cr-iconset name="cr" size="24"></cr-iconset>
-    <title>Treact</title>
+       <title>Treact</title>
+       <link rel="stylesheet" href="./Treact_files/style.css">
+    <link rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.o/css/all.css" 
+integrity="sha384-AYmEC3Yw5cVb3ZcuHtoA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="./Treact_files/index.js.download"></script>
 </head>
-<body>
-    <pdf-viewer id="viewer" class="pdf-viewer">
-        <div class="pdf-viewer">
-            <div class="pdf-viewer__header">
-                <h1 class="pdf-viewer__title">Treact</h1>
-            </div>
-            <div class="pdf-viewer__content">
-                <p>Welcome to the Treact PDF Viewer!</p>
-                <p>This viewer allows you to view PDF documents directly in your browser.</p>
-            </div>
-        </div>
-</body>
-#shadow-root (open)
-<!---->
-<!--_html_template_start_-->
-<div id="toolbar">
-<div id="start">
-    <cr-icon-button id="sidenavToggle" iron-icon="pdf:Menu" title="Menu" aria-label="Menu" aria-expanded="true" role="button" tabindex="0" aria-disabled="false"></cr-icon-button>
-aria-label="Menu" aria-expanded="true" role="button" tabindex="0" aria-disabled="false"></cr-icon-button>
-<span id="title">
-    <!--?<lit12124016811-->
-    "TReact"
-    </span>
-</div>
-<div id="center">
-    <viewer-page-selector style="--page-length-digits: 2;"></viewer-page-selector>
-    <span class="vertival-separator"></span>
-    #shadow-root (open)
-    <!----->
-    <!--_html_template_start_-->
-    <div id="content">
-        <input part="input" type="text" id="pageSelector" class="page-selector" aria-label="page number">
-        <span id="divider">/</span> 
-        <span id="pagelength">
-            <!--?lit$212401681$-->
-            "19"
-        </span>
-    </div>
-    <!--_html_template_end_-->
-    </viewer-page-selector>
-    <span class="vertical-separator"></span>
-    <span id="zoom-controls"></span>
-<span class="vertical-separator"></span>
-<cr-icon-button id="fit" title="Fit to page" aria-label="Fit to page" iron-icon="pdf:fit-to-height" role="button" tabindex="0" aria-disabled="false">
-    #shadow-root (open)
-    </cr-icon-button>
-<cr-icon-button id="rotate" iron-icon="pdf:rotate-left" suppress-rtl-flip aria-label="Rotate counterclockwise" title="Rotate counterclockwise" role="button"
- tabindex="0" aria-disabled="false">
-    #shadow-root (open)
-    <!---->
-    <div id="icon">
-        <div id="maskedImage"></div>
-    <cr-icon> 
-        </div>
-       </cr-icon-button>
 
+<body>
+    <section id="landing">
+        <nav>
+            <div class="row nav__row">
+                <div class="nav__logo">
+                    <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Treact Logo">
+                    <div class="nav__logo--title"> Treact </div>
+                        </div>
+                    <div class="nav__links">
+                <a href="#" class="nav__link">About</a>
+                <a href="#" class="nav__link">Blog</a>
+                <a href="#" class="nav__link">Pricing</a>
+                <a href="#" class="nav__link">Contact Us</a>
+                <a href="#" class="nav__link login">Login</a>
+                <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+            </div>
+                        <button class="btn__menu" onclick="openMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="btn__menu--svg">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>    
+                            </svg>
+                        </button>  
+            </div>
+        </nav>
+        <div class="modal">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light__StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" yl="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+                  </button> 
+            <div class="modal__links">
+            <a class="modal__link">About</a>
+            <a class="modal__link">Blog</a>
+            <a class="modal__link">Pricing</a>
+            <a class="modal__link">Contact Us</a>
+        <a class="modal__link">Login</a>
+        <a class="modal__link--primary">Sign Up</a>
+        </div>
+        </div>
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="header-description">
+                        <h1>
+                            Beautiful React Templates
+                            <span class="purple">for you.</span>
+                            </h1>
+                <p class="header__description--para">
+                    Our Templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
+</p>
+                <div class="header__email">
+                    <input type="text" class="header__email--input" placeholder="kmorkwebs21@gmail.com">
+               <button class="header__email--btn">Get Started</button>
+                </div>
+                 <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+                <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt class="header__customers">
+                </div>
+                <figure class="header__img--wrapper">
+                    <img src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="" class="header__img">
+                    </figure>
+                    </div>
+                    </div>
+                    <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="header__blob"></svg>
+<g transform="translate(300,300)">
+<path d="M176.2, -106.9C208.7-45.5,201.8,33.5,165.8,99.4C129.9,165.3,65,218.2,-9.2,223.5C-83.4,228.8,-166.9,186.7,201.6,121.4C-236.4,56.2,-222.6,-32.2,-180.9,-98.9C-139.1,-165.7,-69.6,-210.8,1.2,-211.5C71.9,-212.2,143.8,-168.3,176.2,-106.9Z" fill="#6415ff"></path>
+</g>
+</svg>
+        </header>
+        </section>
+        <main>
+            <section id="features">
+                <div class="container">
+                    <div class="row__narrow">
+                        <h2 class="section__title"></h2>
+                             <h4 class="section__tag">FEATURES</h4>
+                            We have Amazing 
+                            <span class="purple">Service.</span> 
+                            <div class="section__para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature__row">
+                            <figure class="feature__img--wrapper">
+                                <img scr="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt class="feature__img">
+                               </figure>
+                                <div class="feature__text">
+                          <h2 class="feature__title">Secure</h2>
+                          <p class="feature__para">
+                            We strickly only deal with vendors that provide top notch security.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                            <figure class="feature__img--wrapper">
+                                <img src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt class="feature__img">
+                            </figure>
+                        <div class="feature__text">
+                           <h2 class="feature__title">24/7 Support</h2>
+                           <p class="feature__para">
+                            Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quisnostrud.
+                           </p>
+                           </div>
+                           </div>
+                           </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt class="feature__img">
+                                </figure>
+                        <div class="feature__text">
+                            <h2 class="feature__title">Customizable</h2>
+                            <p class="feature__para">
+                                Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                            </p>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt class="feature__img">
+                                    </figure>
+                        <div class="feature__text">
+                            <h2 class="feature__title">Reliable</h2>
+                            <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."
+                            </p>
+                            </div>
+                            </div>
+                            </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Fast</h2>
+                                    <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                                    </p>
+                        </div>
+                </div>
+                </div>
+                <div class="feature">
+                    <div class="feature__row">
+                        <figure classs="feature__img--wrapper">
+                            <img src=".assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg/" alt class="feature__img">
+                        </figure>
+                    <div class="feature__text">
+                        <h2 clas="feature__title">Easy</h2>
+                        <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                        </p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <svg width="600" height="600" viewBox="0 0 600 600" smlns="http://www.w3.org/2000/svg" class="features__blob">
+                      <g transform="translate(300,300)">
+                        <path d="M125,-160,4C159.9,-146.7, 184.6,-107.3,178.8,-70.9C173.1,-34.4,137,-0.2,128.8,47.3C120.7,95,140.6,158.2,123.8,198.4C107,238.6,53.5,256.3,5.4,248.9C42.7,241.5,/85.4,208.9,-112.7,172.1C-140,135.3,-151.8,94.2,-146.3,59.7C-140.8,25.1,-117.9,-2.9,-104,-30.1C-90.1,-57.3,-85,-83.7,-69.1,-103.5C-53.3,-123.4,-26.6,-136.7,9.2,-149.4C45.1,-162,90.1,-174,125,-160.4Z" fill="#FFB4BC"></path>                
+                    </g>
+                    </svg>
+                    </section>
+                        <h2>Quality</h2>
+                        <p>We take pride in the quality of our templates. Each template is built with the latest web standards and is tested across multiple devices and browsers.</p>  
+            <section id="steps">
+                <div class="container">
+                    <div class="row__narrow">
+                        <h2>Steps</h2>
+                        <p>Getting started with Treact is easy. Simply choose a template, download it, and start customizing it to fit your needs.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="values">
+                <div class="container">
+                    <div class="row__narrow">
+                        <h2>Values</h2>
+                        <p>We value quality, simplicity, and community. Our templates are built with the latest web standards and are designed to be easy to use.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="pricing">
+                <div class="container">
+                    <div class="row__narrow">
+                        <h2>Pricing</h2>
+                        <p>We offer a variety of pricing plans to suit your needs. Whether you're an individual developer or a large team, we have a plan for you.</p>
+                    </div>
+                </div>  
+            </section>
+            <section id="testimonials">
+                <div class="container">
+                    <div class="row__narrow">
+                        <h2>Testimonials</h2>
+                        <p>Don't just take our word for it. Here's what our users have to say about Treact.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="start">
+                <div class="container">
+                    <div class="row">
+                        <h2>Start Building</h2>
+                        <p>Ready to get started? Choose a template and start building your next project with Treact.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="row footer__row">
+                    <p>&copy; 2023 Treact. All rights reserved.</p>
+                    <ul class="footer__links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+            </footer>
+            <!--Code injected by live-server-->
+            <script>
+                // <![CDATA[ <-- For SVG support
+                if ('WebSocket' in window) {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; i++) {
+                            var elem = sheets[i];
+                            var parent = elem.parentNode || head;
+                            parent.removeChild(elem);
+                            var rel = elm.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            if (elem.rel.toLowerCase() === "stylesheet" && elem.href) {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
+                    var address = protocol + window.location.host + window.location.pathname + 'live-reload';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data === 'reload') window.location.reload();
+                        else if (msg.data === 'refreshCSS') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_log_from_liveServer')) {
+                         console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_log_from_liveServer', true);
+                    }
+                        }();
+                    
+                 else {
+                    console.error('Upgrade your browser. This Browser is NOT suported by Live-Reloading.');
+                }
+                // ]]>
+            </script>
+
+            <span id="okta-plugin-message-channel-available" style="display: none;"></span>
+            <body>
+                <html>
